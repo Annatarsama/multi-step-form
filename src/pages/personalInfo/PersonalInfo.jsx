@@ -1,6 +1,6 @@
 import { useState,useRef, useContext} from 'react';
 import ForwardButton from '../../buttons/ForwardButton';
-import BackButton from '../../buttons/BackButton';
+
 import {Context} from '../../app_content/AppContent';
 import './personalInfo.css';
 
@@ -60,7 +60,7 @@ function PersonalInfo() {
     if(formData.name.length > 3 && formData.email.includes('@') && formData.phone.length >= 10) {
       SetPageNumber(pageNumber + 1);
     } else {
-      console.log('Please fill out the form');
+      alert('Please fill out the form');
     }
   };
 
