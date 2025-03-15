@@ -1,0 +1,143 @@
+.planPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.planPage .title{
+    margin-top: 2.75rem;
+    font-size: 2rem;
+    color: hsl(213, 96%, 18%);
+    font-weight: bolder;
+}
+.planPage .description{
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+}
+.planPage .planContainer{
+    display: flex;
+    margin: 2rem 0 2rem 0;
+    
+    align-items: center;
+    
+}
+.planPage .planContainer .plan{
+    display: flex;
+    margin-right: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    border: 1px solid hsl(229, 24%, 87%);
+    width: 9rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: border-color 0.2s;
+    cursor: pointer;
+    
+}
+.planPage .planContainer .plan:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.planPage .planContainer .plan .planTitle{
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: hsl(213, 96%, 18%);
+}
+.planPage .planContainer .plan .planPrice{
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+}
+.planPage .planContainer .plan .planDescription{
+    font-size: .8rem;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    color: hsl(213, 96%, 18%);
+}
+.planPage .toggleContainer{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 3rem !important;
+    background-color: hsl(217, 100%, 97%);
+    align-items: center;
+}
+.planPage .toggleContainer .planName{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: hsl(231, 11%, 63%);
+    margin: 0 1rem 0 1rem;
+}
+.planPage .toggleContainer .activeSpan{
+    color: hsl(213, 96%, 18%);
+}  
+.planPage .buttonSection{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 8rem;
+}
+
+
+
+.planPage .planContainer  .selectedPlan{
+    border-color:hsl(243, 100%, 62%);
+}
+
+/* Toggle Button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; 
+    height: 20px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; 
+    width: 16px;
+    left: 2px;
+    bottom: 2px; 
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px); 
+    -ms-transform: translateX(20px);
+    transform: translateX(20px); 
+}
+.slider.round {
+    border-radius: 20px; 
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+/* Toggle Button */

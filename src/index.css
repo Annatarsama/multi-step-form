@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+#root{
+  background-color: hsl(217, 100%, 97%);
+  font-family: url('./assets/fonts/Ubuntu-Regular.ttf');
+  font-family: url('./assets/fonts/Ubuntu-Bold.ttf');
+  font-family: url('./assets/fonts/Ubuntu-Medium.ttf');
+ 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

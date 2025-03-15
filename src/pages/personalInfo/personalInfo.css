@@ -1,0 +1,83 @@
+
+.personalInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    font-family:url('https://fonts.google.com/specimen/Ubuntu');
+}
+.personalInfo h2{
+
+    margin-top: 2.75rem;
+    font-size: 2rem;
+    color: hsl(213, 96%, 18%);
+    font-weight: bolder;
+}
+.personalInfo .description{
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(231, 11%, 63%);
+    
+}
+.personalInfo form{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.personalInfo form .inputContainer{
+    margin-top: 1rem;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+}
+.personalInfo form .inputContainer .label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.personalInfo form .inputContainer .label label{
+    font-size: 0.9rem;
+    font-weight:600;
+    color: hsl(213, 96%, 18%);
+}
+.personalInfo form .inputContainer .label .errorText{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    font-size: 0.9rem;
+    visibility: hidden;
+}
+.personalInfo form .inputContainer input{
+    width: 100%;
+    font-size: 0.9rem;
+    color: hsl(213, 96%, 29%);
+    font-weight: 600;
+    height: 2.5rem;
+    outline: none;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+.personalInfo form .inputContainer input:focus{
+    border-color: hsl(243, 100%, 62%);
+    
+}
+.personalInfo form .inputContainer .error:focus, .personalInfo form .inputContainer .error{
+    border-color: hsl(0, 100%, 74%) ;
+}
+.personalInfo .buttonSection{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    
+}

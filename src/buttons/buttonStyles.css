@@ -1,0 +1,34 @@
+button{
+    font-size: 1rem;
+    font-weight: bolder;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.forward-btn{
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+    transition: background-color 0.3s ease;
+
+}
+.forward-btn:hover{
+    background-color: hsl(213, 96%, 30%);
+}
+.back-btn{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(231, 11%, 63%);
+    transition: color 0.3s ease;
+}
+.back-btn:hover{
+    color: hsl(213, 96%, 18%);
+}
+.confirm-btn{
+    background-color: hsl(243, 100%, 62%);
+    color: hsl(0, 0%, 100%);
+}
+.confirm-btn:hover{
+    background-color: hsl(243, 100%, 72%);
+}
+
